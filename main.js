@@ -53,9 +53,9 @@
 
     // ローカルストレージにデータを保存
     // watch: {
-    //   todos: {
+    //   schedules: {
     //     handler: function(){
-    //       localStorage.setItem('todos', JSON.stringify(this.todos));
+    //       localStorage.setItem('schedules', JSON.stringify(this.schedules));
     //     },
     //   deep: true
     //   }
@@ -63,17 +63,17 @@
 
     // ローカルストレージからデータをロード
     // mounted: function(){
-    //   this.todos = JSON.parse(localStorage.getItem('todos')) || [];
+    //   this.schedules = JSON.parse(localStorage.getItem('schedules')) || this.schedules;
     // },
 
-    methods: {
-      trueItem: function (index){
-        this.schedules[index].isDone = true;
-        },
-      falseItem: function (index){
-        this.schedules[index].isDone = false;
-      }
-    },
+    // methods: {
+    //   trueItem: function (index){
+    //     this.schedules[index].isDone = true;
+    //     },
+    //   falseItem: function (index){
+    //     this.schedules[index].isDone = false;
+    //   }
+    // },
 
     computed: {
       remaining: function () {

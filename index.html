@@ -52,10 +52,10 @@
             <th scope="row">{{ schedule.time }}{{ schedule.isDone }}</th>
             <td>
               <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
-                <label class="btn btn-outline-success" @click="trueItem(index)">
+                <label class="btn btn-outline-success" :class="{active: schedule.isDone}" @click="trueItem(index)">
                   <input type="radio" name="options" id="option1" autocomplete="off"> 出勤
                 </label>
-                <label class="btn btn-danger btn-outline-danger" @click="falseItem(index)">
+                <label class="btn btn-danger btn-outline-danger" :class="{active: schedule.isDone === false}" @click="falseItem(index)">
                   <input type="radio" name="options" id="option2" autocomplete="off"> 休み
                 </label>
               </div>
