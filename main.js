@@ -66,14 +66,14 @@
     //   this.schedules = JSON.parse(localStorage.getItem('schedules')) || this.schedules;
     // },
 
-    // methods: {
-    //   trueItem: function (index){
-    //     this.schedules[index].isDone = true;
-    //     },
-    //   falseItem: function (index){
-    //     this.schedules[index].isDone = false;
-    //   }
-    // },
+    methods: {
+      trueItem: function (index){
+        this.schedules[index].isDone = true;
+        },
+      falseItem: function (index){
+        this.schedules[index].isDone = false;
+      }
+    },
 
     computed: {
       remaining: function () {
